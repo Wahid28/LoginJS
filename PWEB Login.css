@@ -1,0 +1,55 @@
+td{
+    padding: 10px;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2{
+    padding-top: 20px;
+}
+
+form{
+    width: 30%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.808);
+    background-size: contain;
+}
+
+form input{
+    margin: 10px;
+}
+
+form select{
+    margin-top: 10px;
+}
+
+.button1{
+    display: inline-flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.button2{
+    display: inline-flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+#inputAgama{
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 80px;
+    text-align: center;
+}
+
+table{
+    background-color: white;
+}
