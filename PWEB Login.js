@@ -33,7 +33,7 @@ var num = document.getElementById("tabelinput").rows.length;
     }
 }
 
-/*function masuk(){
+function masuk(){
     var user = document.forms['biodata'] ['username'].value;
     var pass = document.forms['biodata'] ['password'].value;
     var num = document.getElementById("tabelinput").rows.length;
@@ -60,33 +60,39 @@ var num = document.getElementById("tabelinput").rows.length;
                 return true
             }
         }
-    }*/
+    }
 
-    function masuk(){
+    /*function masuk(){
         var user = document.forms['biodata'] ['username'].value;
         var pass = document.forms['biodata'] ['password'].value;
         var num = document.getElementById("tabelinput").rows.length;
+        var username = []
+        var password = []
         var i;
             for (i = 1; i <= Number(num) ; i++){
-                var username = document.getElementById("tabelinput").rows[i].cells[1].innerHTML;
-                var password = document.getElementById("tabelinput").rows[i].cells[2].innerHTML;
-    
-                if(user != username || pass != password){
-                    document.body.style.backgroundColor = 'red'
-                    alert("Gagal Login")
-                    return false
-                }
-                else if(user === "" || pass === ""){
-                    document.body.style.backgroundColor = 'red'
-                    alert("Gagal Login")
-                    return false
-                }
-                else {
-                    document.body.style.backgroundColor = 'green'
-                    alert("Selamat Login")
-                    return true
-                }
+                username [i-1] = document.getElementById("tabelinput").rows[i].cells[1].innerHTML;
+                password [i-1] = document.getElementById("tabelinput").rows[i].cells[2].innerHTML;
+            }
+
+            for (i = 0; i <= Number(num) ; i++){
+                console.log(username[i] + "\n" + password[i])
             }
         }
 
+
+        /*if(user != username || pass != password){
+            document.body.style.backgroundColor = 'red'
+            alert("Gagal Login")
+            return false
+        }
+        else if(user === "" || pass === ""){
+            document.body.style.backgroundColor = 'red'
+            alert("Gagal Login")
+            return false
+        }
+        else {
+            document.body.style.backgroundColor = 'green'
+            alert("Selamat Login")
+            return true
+        }*/
            
